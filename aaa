@@ -1,0 +1,7 @@
+现有实体仅记录简单就诊信息，缺乏详细的用药史，请对相关业务逻辑进行修改，实现下列功能：
+1.扩展 Visit 实体，关联 MedicalRecord 明细（药品名称）。
+2.新增药品实体 Medication，记录库药品名称与药品用途，并枚举三种药品(Amoxicillin、Cerenia、Drontal)。
+3.提供API根据宠物ID查询完整的医疗历史。
+4.在add visit的时候要在Description后增加一列Medication，选项为多个checkbox，勾选相关药品（不可空，可多选，字段为medication，保存多个时用逗号分隔）名称并保存。
+5.在提供Visit查询的所有相关页面都应该展示当时所使用的药品。
+请注意：在任务完成后请使用命令"mvn spring-boot:run"尝试进行启动以验证逻辑是否正确
